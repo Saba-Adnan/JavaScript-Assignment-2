@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Chapter no (12-13) </title>
+</head>
+<body>
+    <script>
+
+//  Q no 1 : Write a program that takes a character (number or string) in a variable & checks whether the given input is a
+// number, uppercase letter or lower case letter. (Hint: ASCII
+// codes:- A=65, Z=90, a=97, z=122).
+
+// function checkCharacter() {
+//     // Prompt the user to enter a character
+//     let char = prompt("Enter a character:");
+
+//     // Get the ASCII code of the character
+//     let asciiCode = char.charCodeAt(0);
+
+//     // Check if the character is a number, uppercase letter, or lowercase letter
+//     if (asciiCode >= 48 && asciiCode <= 57) {
+//         alert("The character is a number.");
+//     } else if (asciiCode >= 65 && asciiCode <= 90) {
+//         alert("The character is an uppercase letter.");
+//     } else if (asciiCode >= 97 && asciiCode <= 122) {
+//         alert("The character is a lowercase letter.");
+//     } else {
+//         alert("The character is neither a number nor a letter.");
+//     }
+// }
+
+// // Call the function to execute
+// checkCharacter();
+
+
+
+// Q no 2: Write a JavaScript program that accept two integers anddisplay the larger. Also show if the two integers are equal.
+
+// function compareIntegers() {
+//     // Prompt the user to enter two integers
+//     let num1 = parseInt(prompt("Enter the first integer:"));
+//     let num2 = parseInt(prompt("Enter the second integer:"));
+
+//     // Check if the two integers are equal
+//     if (num1 === num2) {
+//         alert("The two integers are equal.");
+//     } else {
+//         // Determine and display the larger integer
+//         if (num1 > num2) {
+//             alert(`The larger integer is ${num1}.`);
+//         } else {
+//             alert(`The larger integer is ${num2}.`);
+//         }
+//     }
+// }
+
+// // Call the function to execute
+// compareIntegers();
+
+
+// Q no 3: Write a program that takes input a number from user &state whether the number is positive, negative or zero.
+
+// function checkNumber() {
+//     // Prompt the user to enter a number
+//     let number = parseFloat(prompt("Enter a number:"));
+
+//     // Check if the number is positive, negative, or zero
+//     if (number > 0) {
+//         alert("The number is positive.");
+//     } else if (number < 0) {
+//         alert("The number is negative.");
+//     } else if (number === 0) {
+//         alert("The number is zero.");
+//     } else {
+//         alert("Invalid input. Please enter a valid number.");
+//     }
+// }
+
+// // Call the function to execute
+// checkNumber();
+
+
+// Q no 4: Write a program that takes a character (i.e. string oflength 1) and returns true if it is a vowel, false otherwise
+
+// function isVowel(char) {
+//     // Convert the character to lowercase to handle both uppercase and lowercase inputs
+//     char = char.toLowerCase();
+
+//     // Check if the character is a vowel
+//     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// // Prompt the user to enter a single character
+// let userChar = prompt("Enter a single character:");
+
+// // Ensure the input is exactly one character long
+// if (userChar.length === 1) {
+//     // Check if the character is a vowel and display the result
+//     let result = isVowel(userChar);
+//     alert(result);  // Displays true if vowel, false otherwise
+// } else {
+//     alert("Please enter exactly one character.");
+// }
+
+
+// Q no 5: Write a program that
+
+// a. Store correct password in a JS variable.
+// b. Asks user to enter his/her password
+// c. Validate the two passwords:
+// i. Check if user has entered password. If not, then give message “ Please enter your password”
+// ii. Check if both passwords are same. If they are same, show message “Correct! The password you entered
+//  matches the original password”. Show“Incorrect password” otherwise.
+
+// function validatePassword() {
+//     // Store the correct password in a variable
+//     const correctPassword = "securePassword123";
+
+//     // Prompt the user to enter their password
+//     let userPassword = prompt("Enter your password:");
+
+//     // Check if the user has entered a password
+//     if (userPassword === null || userPassword.trim() === "") {
+//         alert("Please enter your password.");
+//     } else if (userPassword === correctPassword) {
+//         // Check if the entered password matches the correct password
+//         alert("Correct! The password you entered matches the original password.");
+//     } else {
+//         alert("Incorrect password.");
+//     }
+// }
+
+// // Call the function to execute the password validation
+// validatePassword();
+
+
+// Q no 6: This if/else statement does not work. Try to fix it:
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// else
+// greeting = "Good evening";
+// }
+
+
+// var greeting;
+// var hour = 13;
+
+// if (hour < 18) {
+//     greeting = "Good day";
+// } else {
+//     greeting = "Good evening";
+// }
+
+// console.log(greeting); // This will display the greeting based on the time of day
+
+// Q no 7: Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the
+// following case using if, else & else if statements.
+
+
+// function getTimeOfDay() {
+//     // Prompt the user to enter the time in 24-hour format (e.g., 1900)
+//     let time = prompt("Enter the time in 24-hour format (e.g., 1900 for 7 PM):");
+
+//     // Parse the input as an integer
+//     let hour = parseInt(time, 10);
+
+//     // Validate input
+//     if (isNaN(hour) || hour < 0 || hour > 2359 || time.length !== 4) {
+//         alert("Invalid time format. Please enter the time in 24-hour format (e.g., 1900).");
+//         return;
+//     }
+
+//     // Determine the time of day and display the corresponding message
+//     if (hour >= 500 && hour < 1200) {
+//         alert("Good morning");
+//     } else if (hour >= 1200 && hour < 1700) {
+//         alert("Good afternoon");
+//     } else if (hour >= 1700 && hour < 2100) {
+//         alert("Good evening");
+//     } else if (hour >= 2100 || hour < 500) {
+//         alert("Good night");
+//     }
+// }
+
+// // Call the function to execute
+// getTimeOfDay();
+
+
+    </script>
+
+
+</body>
+</html>

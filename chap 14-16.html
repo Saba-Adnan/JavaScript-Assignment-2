@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter (14-16) Assignment</title>
+</head>
+<body>
+    
+    <script>
+
+// Q no 1 : Declare an empty array using JS literal notation to storestudent names in future.
+
+// Declare an empty array to store student names
+// let studentNames = [];
+
+
+
+// Q no 2 : Declare an empty array using JS object notation to store student names in future.
+
+// // Declare an empty array-like object to store student names
+// let studentNames = {
+//     0: "Alice",
+//     1: "Bob",
+//     length: 2
+// };
+
+// // Example of adding a new student name
+// studentNames[studentNames.length] = "Charlie";
+// studentNames.length++;
+
+// console.log(studentNames); // Output: { 0: 'Alice', 1: 'Bob', 2: 'Charlie', length: 3 }
+
+
+// Q no 3: Declare and initialize a strings array.
+
+// Declare and initialize a strings array
+// let studentNames = ["Saba", "Fatima", "Sara", "Sana"];
+
+// console.log(studentNames);
+
+// Q no 4 : Declare and initialize a numbers array.
+
+// Declare and initialize a numbers array
+// let numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers); 
+
+// Q no 5 : Declare and initialize a boolean array.
+
+// Declare and initialize a boolean array:
+
+// let booleanValues = [true, false, true, false, true];
+
+// console.log(booleanValues); 
+
+// Q no 6. Declare and initialize a mixed array.
+
+// Declare and initialize a mixed array:
+
+// let mixedArray = [42, "Hello", true, null, {name: "Alice"}, [1, 2, 3]];
+
+// console.log(mixedArray); 
+
+// Q no 7: Declare and initialize an array with education qualifications
+// let qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+// // Create a string to store the HTML content
+// let htmlContent = "<h2>Qualifications:</h2><ul style='list-style-type: none;'>";
+
+// // Loop through the array and add each qualification with its index to the HTML content
+// for (let i = 0; i < qualifications.length; i++) {
+//     htmlHeading += `<li>${i + 1}. ${qualifications[i]}</li>`;
+// }
+
+// // Close the unordered list tag
+// htmlHeading += "</ul>";
+
+// // Display the HTML content in the browser
+// document.body.innerHTML = htmlHeading;
+
+// Q no 8. Write a program to store 3 student names in an array.Take another array to store score of these three students.
+// Assume that total marks are 500 for each student, displaythe scores & percentages of students like:
+
+// Declare and initialize arrays to store student names and their scores
+
+// let studentNames = ["Sara", "Ali", "John"];
+// let studentScores = [320, 450, 380];
+
+// // Assume total marks are 500 for each student
+// const totalMarks = 500;
+
+// // Create a string to store the HTML content
+// let htmlContent = "";
+
+// // Loop through the arrays and build the HTML content
+// for (let i = 0; i < studentNames.length; i++) {
+//     let percentage = (studentScores[i] / totalMarks) * 100;
+//     htmlContent += `<p>Score of ${studentNames[i]} is ${studentScores[i]}. Percentage: ${percentage.toFixed(2)}%</p>`;
+// }
+
+// // Display the HTML content in the browser
+// document.body.innerHTML = htmlContent;
+
+// Q no 9: 9. Initialize an array with color names. Display the array elements in your browser.
+// a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array.
+// Display the updated array in your browser.
+
+// // Initialize an array with color names
+// let colors = ["Red", "Green", "Blue", "Yellow", "Purple"];
+
+// // Function to display the array in the browser
+// function displayColors(arr) {
+//     document.body.innerHTML += `<p>${arr.join(", ")}</p>`;
+// }
+
+// // Display the initial array
+// document.body.innerHTML += "<h2>Initial Colors:</h2>";
+// displayColors(colors);
+
+// // a. Add color to the beginning
+// let colorToAddAtBeginning = prompt("Enter a color to add at the beginning:");
+// colors.unshift(colorToAddAtBeginning);
+// document.body.innerHTML += "<h2>After Adding Color at the Beginning:</h2>";
+// displayColors(colors);
+
+// // b. Add color to the end
+// let colorToAddAtEnd = prompt("Enter a color to add at the end:");
+// colors.push(colorToAddAtEnd);
+// document.body.innerHTML += "<h2>After Adding Color at the End:</h2>";
+// displayColors(colors);
+
+// // c. Add two more colors to the beginning
+// colors.unshift("Pink", "Orange");
+// document.body.innerHTML += "<h2>After Adding Two More Colors at the Beginning:</h2>";
+// displayColors(colors);
+
+// // d. Delete the first color
+// colors.shift();
+// document.body.innerHTML += "<h2>After Deleting the First Color:</h2>";
+// displayColors(colors);
+
+// // e. Delete the last color
+// colors.pop();
+// document.body.innerHTML += "<h2>After Deleting the Last Color:</h2>";
+// displayColors(colors);
+
+// // f. Add color at a specific index
+// let indexToAddColor = prompt("Enter the index at which you want to add a color:");
+// let colorToAddAtIndex = prompt("Enter the color to add:");
+// colors.splice(indexToAddColor, 0, colorToAddAtIndex);
+// document.body.innerHTML += "<h2>After Adding Color at Specific Index:</h2>";
+// displayColors(colors);
+
+// // g. Delete color(s) at a specific index
+// let indexToDeleteColor = prompt("Enter the index from which you want to delete color(s):");
+// let numberOfColorsToDelete = prompt("Enter the number of colors you want to delete:");
+// colors.splice(indexToDeleteColor, numberOfColorsToDelete);
+// document.body.innerHTML += "<h2>After Deleting Color(s) from Specific Index:</h2>";
+// displayColors(colors);
+
+// Q no 10 : Write a program to store student scores in an array & sort the array in ascending order using Array’s sort
+// method.
+
+// Store student scores in an array
+// let studentScores = [320, 230, 320, 480, 120];
+
+// Display the original scores
+// document.write('<h2>Scores of Students:</h2>');
+// document.write('<p>' + studentScores.join(", ") + '</p>');
+
+//  Sort the array in ascending order
+// studentScores.sort(function(a, b) {
+//     return a - b;
+// });
+
+// Display the sorted scores
+// document.write('<h2>Ordered Scores of Students:</h2>');
+// document.write('<p>' + studentScores.join(", ") + '</p>');
+
+
+
+// Q no 11: Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+
+ // Initialize the array with city names
+//  let cities = ['Karachi', 'Lahore', 'Islamabad', 'Quetta', 'Peshawar'];
+
+// Copy 3 elements to selectedCities array
+// let selectedCities = [cities[2], cities[3]]; 
+
+// Display the cities list
+// document.write('<h2>Cities list:</h2>');
+// document.write('<p>' + cities.join(', ') + '</p>');
+
+// Display the selected cities list
+// document.write('<h2>Selected cities list:</h2>');
+// document.write('<p>' + selectedCities.join(', ') + '</p>');
+
+
+// Q no 12: Write a program to create a single string from the below mentioned array:
+
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+
+// Initialize the array
+// var arr = ["This ", " is ", " my ", " cat"];
+
+// Display the array
+// document.write('<h2>Array:</h2>');
+// document.write('<p>' + arr.join(', ') + '</p>');
+
+// Create a single string from the array
+// var str = arr.join('');
+
+// Capitalize the first letter of the string
+// str = str.charAt(0).toUpperCase() + str.slice(1);
+
+// Display the resulting string
+// document.write('<h2>String:</h2>');
+// document.write('<p>' + str + '</p>');
+
+// Q no 13: Create a new array. Store values one by one in such a way that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out)
+
+  // Create an empty array to store devices
+        // let devices = [];
+
+        // Add devices to the array (FIFO order)
+        // devices.push("keyboard");
+        // devices.push("mouse");
+        // devices.push("printer");
+        // devices.push("monitor");
+
+        // Display the devices array
+        // document.write('<h2>Devices:</h2>');
+        // document.write('<p>' + devices.join(', ') + '</p>');
+
+        // Process and display devices in FIFO order
+        // document.write('<h2>Out:</h2>');
+        
+        // while (devices.length > 0) {
+            // let device = devices.shift(); // Remove the first device
+            // document.write('<p>Out: ' + device.charAt(0).toUpperCase() + device.slice(1) + '</p>');
+        // }
+
+
+    // Q no 14:  Create a new array. Store values one by one in such a way that you can access the values in reverse order. 
+        // (Last In-First Out)
+
+      // Create an empty array to store devices
+      let devices = [];
+
+    // Add devices to the array (LIFO order)
+        // devices.push("keyboard");
+        // devices.push("mouse");
+        // devices.push("printer");
+        // devices.push("monitor");
+
+    // Display the devices array
+        // document.write('<h2>Devices:</h2>');
+        // document.write('<p>' + devices.join(', ') + '</p>');
+
+    // Process and display devices in LIFO order
+        // document.write('<h2>Out:</h2>');
+
+        // while (devices.length > 0) {
+        // let device = devices.pop(); // Remove the last device
+        // document.write('<p>Out: ' + device.charAt(0).toUpperCase() + device.slice(1) + '</p>');
+        // }
+
+
+        // Q no 15: Write a program to store phone manufacturers (Apple,Samsung, Motorola, Nokia, Sony & Haier) in an array.
+        // Display the following dropdown/select menu in your browser using document.write() method:
+
+
+        // Array of phone manufacturers
+        const manufacturers = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+
+        // Start building the dropdown/select menu
+        let dropdown = '<select>';
+
+        // Add an option element for each manufacturer
+        for (let i = 0; i < manufacturers.length; i++) {
+         dropdown += `<option value="${manufacturers[i]}">${manufacturers[i]}</option>`;
+        }
+
+        // Close the select tag
+        dropdown += '</select>';
+
+        // Display the dropdown menu
+        document.write('<h2>Select Phone Manufacturer:</h2>');
+        document.write(dropdown);
+
+
+
+
+    </script>
+</body>
+</html>

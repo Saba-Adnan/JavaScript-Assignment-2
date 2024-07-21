@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter (9-11) Assignment </title>
+</head>
+
+<body>
+    <script>
+
+        // Q no 1. Write a program to take “city” name as input from user. If
+        // user enters “Karachi”, welcome the user like this:
+        // “Welcome to city of lights”
+        // // Prompt user to enter city name
+        // var cityName = prompt("Enter the city name:");
+
+        // // Check if the entered city name is "Karachi"
+        // if (cityName.toLowerCase() === "karachi") {
+        //     document.write("<h1>Welcome to the city of lights!</h1>");
+        // } else {
+        //     document.write("<h1>Welcome!</h1>");
+        // }
+
+        // Q no 2. Write a program to take “gender” as input from user. If the
+        // user is male, give the message: Good Morning Sir. If the
+        // user is female, give the message: Good Morning Ma’am.
+
+        //          // Prompt user to enter gender
+        //          var gender = prompt("Enter your gender (male or female):");
+
+        //         // Convert input to lowercase to handle case sensitivity
+        //         gender = gender.toLowerCase();
+
+        //         // Check gender and display appropriate message
+        //         if (gender === "male") {
+        //         document.write("<h1>Good Morning Sir.</h1>");
+        //         } else if (gender === "female") {
+        //          document.write("<h1>Good Morning Ma’am.</h1>");
+        //         } else {
+        //     document.write("<h1>Good Morning!</h1>");
+        // }
+
+
+        // Q no 3. Write a program to take input color of road traffic signal
+        // from the user & show the message according to this table:
+
+
+        // Prompt user to enter traffic signal color
+        // var color = prompt("Enter the color of the traffic signal (Red, Yellow, or Green):");
+
+        // // Convert input to lowercase to handle case sensitivity
+        // color = color.toLowerCase();
+
+        // // Initialize variables for message and signal color
+        // var message, signalColor;
+
+        // // Determine message based on user input
+        // switch (color) {
+        //     case "red":
+        //         message = "Must Stop";
+        //         signalColor = "Red";
+        //         break;
+        //     case "yellow":
+        //         message = "Ready to move";
+        //         signalColor = "Yellow";
+        //         break;
+        //     case "green":
+        //         message = "Move now";
+        //         signalColor = "Green";
+        //         break;
+        //     default:
+        //         message = "Invalid color entered";
+        //         signalColor = "Unknown";
+        //         break;
+        // }
+
+        // // Function to display the table row dynamically based on the switch case
+        // function displayTable() {
+        //     document.write('<table><thead><tr><th>Signal Color</th><th>Message</th></tr></thead><tbody>');
+        //     document.write('<tr><td>' + signalColor + '</td><td>' + message + '</td></tr>');
+        //     document.write('</tbody></table>');
+        // }
+
+        // Call the function to display the table
+        // displayTable();
+
+        // 4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel
+        //  is less than 0.25litres ,show the message “Please refill the fuel in your car”
+
+        // Function to check the fuel level and give a message if it's too low
+
+        // function checkFuelLevel() {
+        // // Take input from the user for the remaining fuel in the car
+        // let remainingFuel = prompt("Enter the remaining fuel in your car (in litres):");
+
+        // // Convert the input to a number
+        // remainingFuel = parseFloat(remainingFuel);
+
+        // // Check if the remaining fuel is less than 0.25 litres
+        // if (remainingFuel < 0.25) {
+        //     // Show the message to refill the fuel
+        //     alert("Please refill the fuel in your car");
+        // } else {
+        //     alert("Fuel level is sufficient.");
+        //     }
+        // }
+
+        // Call the function to execute the fuel check
+        // checkFuelLevel();
+
+        // Q. 5: Run this script, & check whether alert message would be displayed or not. Record the outputs.
+        // a. var a = 4;
+        // if (++a === 5){
+        // alert("given condition for variable a is true");
+        // }
+
+        //         var a = 4;
+        //         if (++a === 5){
+        //         alert("given condition for variable a is true");
+        //         }
+
+        //         var b = 82;
+        //         if (b++ === 83){
+        //         alert("given condition for variable b is true");
+        //         }
+
+        //         var c = 12;
+        //         if (c++ === 13){
+        //         alert("condition 1 is true");
+        //         }
+        //         if (c === 13){
+        //     alert("condition 2 is true");
+        // }
+        //         if (++c < 14){
+        //         alert("condition 3 is true");
+        //         }
+        //         if(c === 14){
+        //         alert("condition 4 is true");
+        //         }
+
+        //         var materialCost = 20000;
+        //         var laborCost = 2000;
+        //         var totalCost = materialCost + laborCost;
+        //        if (totalCost === laborCost + materialCost){
+        //        alert("The cost equals");
+        //        }
+
+        //         if (true){
+        //        alert("True");
+        //        }
+        //       if (false){
+        //       alert("False");
+        //       }
+
+
+        //       if ("car" < "cat") {
+        //     alert("car is smaller than cat");
+        //     }
+
+        // Q no 6: Write a Program to take input the obtained marks in three subjects and total marks. Compute & show the resulting 
+        // percentage on your page Take percentage and compute grade as per following table: 
+
+
+        // <div>
+        //     <h1>Marks Sheet</h1>
+        //     <label for="subject1">Marks obtained in Subject 1:</label>
+        //     <input type="number" id="subject1"><br><br>
+        //     <label for="subject2">Marks obtained in Subject 2:</label>
+        //     <input type="number" id="subject2"><br><br>
+        //     <label for="subject3">Marks obtained in Subject 3:</label>
+        //     <input type="number" id="subject3"><br><br>
+        //     <label for="totalMarks">Total Marks:</label>
+        //     <input type="number" id="totalMarks"><br><br>
+        //     <button onclick="calculateResult()">Calculate</button>
+
+        //     <div class="result">
+        //         <h2>Result:</h2>
+        //         <p id="totalMarksResult"></p>
+        //         <p id="marksObtainedResult"></p>
+        //         <p id="percentageResult"></p>
+        //         <p id="gradeResult"></p>
+        //         <p id="remarksResult"></p>
+        //     </div>
+
+        //         function calculateResult() {
+        //             // Get input values
+        //             let subject1 = parseFloat(document.getElementById('subject1').value);
+        //             let subject2 = parseFloat(document.getElementById('subject2').value);
+        //             let subject3 = parseFloat(document.getElementById('subject3').value);
+        //             let totalMarks = parseFloat(document.getElementById('totalMarks').value);
+
+        //             // Check if inputs are valid numbers
+        //             if (isNaN(subject1) || isNaN(subject2) || isNaN(subject3) || isNaN(totalMarks)) {
+        //                 alert("Please enter valid numbers for all fields.");
+        //                 return;
+        //             }
+
+        //             // Calculate total obtained marks and percentage
+        //             let obtainedMarks = subject1 + subject2 + subject3;
+        //             let percentage = (obtainedMarks / totalMarks) * 100;
+
+        //             // Determine grade and remarks based on percentage
+        //             let grade, remarks;
+        //             if (percentage >= 80) {
+        //                 grade = 'A-one';
+        //                 remarks = 'Excellent';
+        //             } else if (percentage >= 70) {
+        //                 grade = 'A';
+        //                 remarks = 'Good';
+        //             } else if (percentage >= 60) {
+        //                 grade = 'B';
+        //                 remarks = 'You need to improve';
+        //             } else {
+        //                 grade = 'Fail';
+        //                 remarks = 'Sorry';
+
+        // Q no 7. Guess game:
+        // Store a secret number (ranging from 1 to 10) in a variable.
+        // Prompt user to guess the secret number.
+        // a. If user guesses the same number, show “Bingo! Correct
+        // answer”.
+        // b. If the guessed number +1 is the secret number, show
+        // “Close enough to the correct answer”.
+
+        // // Store a secret number between 1 and 10
+        // const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+        // // Function to check the user's guess
+        // function checkGuess() {
+        //     // Prompt the user to guess the secret number
+        //     let userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+        //     // Check if the guess is correct, close, or incorrect
+        //     if (userGuess === secretNumber) {
+        //         alert("Bingo! Correct answer");
+        //     } else if (userGuess + 1 === secretNumber || userGuess - 1 === secretNumber) {
+        //         alert("Close enough to the correct answer");
+        //     } else {
+        //         alert("Try again!");
+        //     }
+        // }
+
+        // Call the function to start the guessing game
+        // checkGuess();
+
+//    Q no 8.     Write a program to check whether the given number is divisible by 3. Show the message to the user if the number
+//         is divisible by 3.
+
+    // function checkDivisibility() {
+    // // Prompt the user to enter a number
+    // let userNumber = parseInt(prompt("Enter a number to check if it is divisible by 3:"));
+
+    // // Check if the number is divisible by 3
+    // if (userNumber % 3 === 0) {
+    //     alert("The number is divisible by 3.");
+    // } else {
+    //     alert("The number is not divisible by 3.");
+    // }
+    // }
+
+    // // Call the function to check divisibility
+    // checkDivisibility();
+
+    // Q no 9. Write a program that checks whether the given input is an
+    // even number or an odd number.
+
+
+//     function checkEvenOdd() {
+//     // Prompt the user to enter a number
+//     let userNumber = parseInt(prompt("Enter a number to check if it is even or odd:"));
+
+//     // Check if the number is even or odd
+//     if (userNumber % 2 === 0) {
+//         alert("The number is even.");
+//     } else {
+//         alert("The number is odd.");
+//     }
+// }
+
+// // Call the function to check if the number is even or odd
+// checkEvenOdd();
+
+
+// Q no 10. Write a program that takes temperature as input and shows a message based on following criteria:
+
+// a. T > 40 then “It is too hot outside.”
+// b. T > 30 then “The Weather today is Normal.”
+// c. T > 20 then “Today’s Weather is cool.”
+// d. T > 10 then “OMG! Today’s weather is so Cool.”
+
+// function checkTemperature() {
+//     // Prompt the user to enter the temperature
+//     let temperature = parseFloat(prompt("Enter the temperature:"));
+
+//     // Check the temperature and display the appropriate message
+//     if (temperature > 40) {
+//         alert("It is too hot outside.");
+//     } else if (temperature > 30) {
+//         alert("The Weather today is Normal.");
+//     } else if (temperature > 20) {
+//         alert("Today’s Weather is cool.");
+//     } else if (temperature > 10) {
+//         alert("OMG! Today’s weather is so Cool.");
+//     } else {
+//         alert("It’s quite cold today.");
+//     }
+// }
+
+// // Call the function to check the temperature
+// checkTemperature();
+
+// Q no 11: Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+
+// function calculator() {
+//     // Prompt the user for input
+//     let firstNumber = parseFloat(prompt("Enter the first number:"));
+//     let secondNumber = parseFloat(prompt("Enter the second number:"));
+//     let operation = prompt("Enter the operation (+, -, *, /, %):");
+
+//     // Initialize a variable to store the result
+//     let result;
+
+//     // Perform the operation based on the user's input
+//     if (operation === '+') {
+//         result = firstNumber + secondNumber;
+//     } else if (operation === '-') {
+//         result = firstNumber - secondNumber;
+//     } else if (operation === '*') {
+//         result = firstNumber * secondNumber;
+//     } else if (operation === '/') {
+//         if (secondNumber !== 0) {
+//             result = firstNumber / secondNumber;
+//         } else {
+//             alert("Error: Division by zero is not allowed.");
+//             return;
+//         }
+//     } else if (operation === '%') {
+//         result = firstNumber % secondNumber;
+//     } else {
+//         alert("Error: Invalid operation.");
+//         return;
+//     }
+
+//     // Display the result
+//     alert(`The result of ${firstNumber} ${operation} ${secondNumber} is ${result}.`);
+// }
+
+// // Call the calculator function to execute
+// calculator();
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 2</title>
+
+    <a href="chap9-11.html">chapter no 9-11</a>
+    <a href="chap12-13.html">chapter no 12 -13</a>
+    <a href="chap 14-16.html">chapter no 14-16</a>
+    <a href="Chap 17-20.html">chapter no 17-20</a>
+</head>
+
+  <script>
+
+   // Define a variable and assign a value
+//    var a = 10;
+
+// // Use document.write to display the initial result with a line break
+// document.write("Result: <br> The value of a is : " + a + "<br><br>");
+
+// // Increment a using pre-increment
+// var newA = ++a;
+
+// // Use document.write to display the pre-incremented value
+// document.write("The value of ++a is : " + newA + "<br>");
+// document.write("Now the value of a is : " + a + "<br><br>");
+
+// // Increment a using post-increment
+// var postA = a++;
+
+// // Use document.write to display the post-incremented value
+// document.write("The value of a++ is : " + postA + "<br>");
+// document.write("Now the value of a is : " + a + "<br><br>");
+
+// // Decrement a using pre-decrement
+// var preDecA = --a;
+
+// // Use document.write to display the pre-decremented value
+// document.write("The value of --a is : " + preDecA + "<br>");
+// document.write("Now the value of a is : " + a + "<br><br>");
+
+// // Decrement a using post-decrement
+// var postDecA = a--;
+
+// // Use document.write to display the post-decremented value
+// document.write("The value of a-- is : " + postDecA + "<br>");
+// document.write("Now the value of a is : " + a);
+     
+//Q no 2: What will be the output in variables a, b & result after
+// execution of the following script:
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+// Explain the output at each stage:
+// --a;
+// --a - --b;
+// --a - --b + ++b;
+// --a - --b + ++b + b--;
+
+//        // Initial values
+// var a = 2, b = 1;
+
+// // Explanation step-by-step:
+
+// // Step 1: --a
+// a = 2;
+// b = 1;
+// // --a is a pre-decrement, so 'a' is decremented by 1 before it is used
+// --a; // a becomes 1
+
+// // At this point, the values are:
+// // a = 1
+// // b = 1
+
+// // Step 2: --a - --b
+// a = 1;
+// b = 1;
+// // --a is a pre-decrement, so 'a' is decremented by 1 before it is used
+// --a; // a becomes 0
+// // --b is a pre-decrement, so 'b' is decremented by 1 before it is used
+// --b; // b becomes 0
+// // Now we perform the subtraction
+// var result = --a - --b; // result = 0 - 0 = 0
+
+// // At this point, the values are:
+// // a = 0
+// // b = 0
+// // result = 0
+
+// // Step 3: --a - --b + ++b
+// a = 0;
+// b = 0;
+// // --a is a pre-decrement, so 'a' is decremented by 1 before it is used (it is already 0)
+// --a; // a remains 0
+// // --b is a pre-decrement, so 'b' is decremented by 1 before it is used (it is already 0)
+// --b; // b remains 0
+// // ++b is a pre-increment, so 'b' is incremented by 1 before it is used
+// ++b; // b becomes 1
+// // Now we perform the addition
+// result = --a - --b + ++b; // result = 0 - 0 + 1 = 1
+
+// At this point, the values are:
+// a = 0
+// b = 1
+// // result = 1
+
+// // Step 4: --a - --b + ++b + b--
+// a = 0;
+// b = 1;
+// // --a is a pre-decrement, so 'a' is decremented by 1 before it is used (it is already 0)
+// --a; // a remains 0
+// // --b is a pre-decrement, so 'b' is decremented by 1 before it is used
+// --b; // b becomes 0
+// // ++b is a pre-increment, so 'b' is incremented by 1 before it is used
+// ++b; // b becomes 1
+// // b-- is a post-decrement, so 'b' is used first and then decremented by 1
+// b--; // result uses b as 1, then b becomes 0
+// // Now we perform the addition
+// result = --a - --b + ++b + b--; // result = 0 - 0 + 1 + 1 = 2
+
+// // At this point, the values are:
+// // a = 0
+// // b = 0
+// // result = 2
+
+// // Output the final values
+// console.log("a =", a); // Output: a = 0
+// console.log("b =", b); // Output: b = 0
+// console.log("result =", result); // Output: result = 2
+
+        // document.write("<p>a is " + a + "</p>");
+        // document.write("<p>b is " + b + "</p>");
+        // document.write("<p>result is " + result + "</p>");
+
+    
+
+
+// Q no. 3: Write a program that takes input a name from user &
+// greet the user.
+
+
+        // // Ask the user for their name
+        // var name = prompt("Please enter your name:");
+        
+        // // Create a greeting message
+        // var greetingMessage = "Hello, " + name + "! Welcome!";
+        
+        // // Display the greeting message using document.write
+        // document.write(greetingMessage);
+
+//  Q no 4: Write a program that takes input a name from user &
+// greet the user.
+
+// Ask the user for a number
+// var number = prompt("Please enter a number:");
+
+// // If the user doesn't enter a number, use 5 by default
+// if (number === null || number === "") {
+//     number = 5;
+// } else {
+//     number = parseInt(number); // Convert the input to an integer
+// }
+
+// // Display the multiplication table for the given number
+// document.write("<h2>Multiplication Table of " + number + "</h2>");
+
+// for (var i = 1; i <= 10; i++) {
+//     document.write(number + " x " + i + " = " + (number * i) + "<br>");
+// }
+
+// Q no 5: (a): Take three subjects name from user and store them in 3
+// different variables.
+
+
+// Ask the user for the names of three subjects
+
+        // var subject1 = prompt("Please enter the name of the first subject:");
+        // var subject2 = prompt("Please enter the name of the second subject:");
+        // var subject3 = prompt("Please enter the name of the third subject:");
+        
+        // // Display the entered subjects
+        // document.write("<h2>You entered the following subjects:</h2>");
+        // document.write("Subject 1: " + subject1 + "<br>");
+        // document.write("Subject 2: " + subject2 + "<br>");
+        // document.write("Subject 3: " + subject3 + "<br>");
+
+      // Q. b) Total marks for each subject is 100, store it in another
+      // variable.
+
+      //  // Ask the user for the names of three subjects
+      //  var subject1 = prompt("Please enter the name of the first subject:");
+      //   var subject2 = prompt("Please enter the name of the second subject:");
+      //   var subject3 = prompt("Please enter the name of the third subject:");
+        
+      //   // Store total marks for each subject
+      //   var totalMarks = 100;
+
+      //   // Display the entered subjects and total marks
+      //   document.write("<h2>You entered the following subjects:</h2>");
+      //   document.write("Subject 1: " + subject1 + " (Total Marks: " + totalMarks + ")<br>");
+      //   document.write("Subject 2: " + subject2 + " (Total Marks: " + totalMarks + ")<br>");
+      //   document.write("Subject 3: " + subject3 + " (Total Marks: " + totalMarks + ")<br>");
+    
+      // c) Take obtained marks for first subject from user and
+      // stored it in different variable.
+
+// Ask the user for the names of three subjects
+
+        // var subject1 = prompt("Please enter the name of the first subject:");
+        // var subject2 = prompt("Please enter the name of the second subject:");
+        // var subject3 = prompt("Please enter the name of the third subject:");
+        
+        // // Store total marks for each subject
+        // var totalMarks = 100;
+
+        // // Ask the user for the obtained marks for the first subject
+        // var obtainedMarksSubject1 = prompt("Please enter the obtained marks for " + subject1 + ":");
+        // obtainedMarksSubject1 = parseInt(obtainedMarksSubject1); // Convert the input to an integer
+
+        // // Display the entered subjects, total marks, and obtained marks
+        // document.write("<h2>You entered the following subjects and marks:</h2>");
+        // document.write("Subject 1: " + subject1 + " (Total Marks: " + totalMarks + ", Obtained Marks: " + obtainedMarksSubject1 + ")<br>");
+        // document.write("Subject 2: " + subject2 + " (Total Marks: " + totalMarks + ")<br>");
+        // document.write("Subject 3: " + subject3 + " (Total Marks: " + totalMarks + ")<br>");
+
+        // d) Take obtained marks for remaining 2 subjects from user
+        // and store them in variables.
+
+          // Assuming we already have the first subject marks stored in 'marksSubject1'
+
+          // Prompt user for marks of subject 2
+        //     var marksSubject2 = prompt("Enter marks obtained for subject 2:");
+
+        //   // Prompt user for marks of subject 3 
+        //     var marksSubject3 = prompt("Enter marks obtained for subject 3:");
+
+        //   // Convert input to numbers if needed (prompt returns a string)
+        //     marksSubject2 = parseInt(marksSubject2);
+        //     marksSubject3 = parseInt(marksSubject3);
+
+        // // Display the obtained marks in console for verification
+        //   console.log("Marks obtained in Subject 2:", marksSubject2);
+        //   console.log("Marks obtained in Subject 3:", marksSubject3);
+
+
+
+  </script>
+<!-- 
+e) Now calculate total marks and percentage and show the -->
+<!-- result in browser like this.(Hint: user table) --><br><br>
+<!-- <table>
+  <tr>
+      <th>Subject</th>
+      <th>Total Marks</th>
+      <th>Marks obtained</th>
+      <th>Percentage</th>
+  </tr>
+  <tr>
+      <td>English</td>
+      <td>100</td>
+      <td>54</td>
+      <td>54%</td>
+  </tr>
+  <tr>
+      <td>Math</td>
+      <td>100</td>
+      <td>54</td>
+      <td>54%</td>
+  </tr>
+  <tr>
+      <td>Urdu</td>
+      <td>100</td>
+      <td>48</td>
+      <td>48%</td>
+  </tr>
+  <tr>
+      <th>Total</th>
+      <td>300</td>
+      <td>156</td>
+      <td>52%</td>
+  </tr>
+</table> -->
+
+
+
+
+</body>
+</html>
